@@ -1,0 +1,223 @@
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+
+html {
+  scroll-behavior: smooth;
+  background-color: #EEEEEE;
+}
+
+.body {
+  padding: 0;
+  margin: 0;
+}
+.body .header {
+  height: 5rem;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-between;
+  padding: 3rem;
+  background-color: rgb(255, 255, 255);
+}
+.body .header .logo {
+  height: 6rem;
+  width: auto;
+}
+.body .header .logo:Hover {
+  cursor: pointer;
+}
+.body .header .nav, .body .header .ul {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body .header .nav .li, .body .header .ul .li {
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: rgb(0, 0, 0);
+  list-style: none;
+  margin: 1rem;
+  padding: 0.2rem;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+}
+.body .header .nav .li:Hover, .body .header .ul .li:Hover {
+  cursor: pointer;
+  border-bottom: 2px solid rgb(0, 0, 0);
+}
+.body .header .whatsapp {
+  height: 2rem;
+  width: auto;
+}
+.body .header .whatsapp:hover {
+  cursor: pointer;
+}
+.body .section-1 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url("../assets/images/background-2.png");
+  background-size: cover;
+}
+.body .section-1 .article-1 {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 6rem;
+}
+.body .section-1 .article-1 .div-info {
+  height: auto;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.body .section-1 .article-1 .div-info .title {
+  width: 100%;
+  text-align: start;
+  font-size: 2rem;
+  font-weight: lighter;
+  color: black;
+}
+.body .section-1 .article-1 .div-info .text {
+  width: 100%;
+  text-align: start;
+  font-size: 0.8rem;
+  color: black;
+}
+.body .footer {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-color: black;
+  padding: 4rem;
+}
+.body .footer .div-all-items {
+  height: auto;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: space-around;
+  align-items: flex-start;
+}
+.body .footer .div-all-items .div-item {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.body .footer .div-all-items .div-item .title {
+  font-size: 1rem;
+  font-weight: lighter;
+  color: rgb(255, 255, 255);
+}
+.body .footer .div-all-items .div-item .nav-footer, .body .footer .div-all-items .div-item .ul-footer {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0;
+}
+.body .footer .div-all-items .div-item .nav-footer .li-footer, .body .footer .div-all-items .div-item .ul-footer .li-footer {
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+  list-style: none;
+  margin-bottom: 1rem;
+  transition: all 0.2s;
+  border-bottom: 1px solid transparent;
+  padding-bottom: 0.3rem;
+}
+.body .footer .div-all-items .div-item .nav-footer .li-footer:hover, .body .footer .div-all-items .div-item .ul-footer .li-footer:hover {
+  cursor: pointer;
+  border-bottom: 1px solid rgb(255, 255, 255);
+}
+.body .footer .div-all-items .div-item .text {
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+}
+.body .footer .div-all-items .div-item .img-instagram {
+  height: 2rem;
+  width: auto;
+}
+.body .footer .div-all-items .div-item .img-instagram:Hover {
+  cursor: pointer;
+}
+.body .footer .div-all-items .div-item .div-location {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body .footer .div-all-items .div-item .div-location .location {
+  height: 1rem;
+  width: auto;
+  margin-right: 0.5rem;
+}
+.body .footer .div-all-items .div-item .div-location .text {
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+}
+.body .footer .div-all-items .div-item .div-contact {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.body .footer .div-all-items .div-item .div-contact .icon {
+  height: 1rem;
+  width: auto;
+  margin-right: 0.5rem;
+}
+.body .footer .div-all-items .div-item .div-contact .text {
+  font-size: 0.8rem;
+  color: rgb(255, 255, 255);
+}
+.body .footer .div-logo {
+  height: auto;
+  width: auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.body .footer .div-logo .logo {
+  height: 7rem;
+  width: auto;
+  margin: 0;
+}
+.body .footer .div-logo .title {
+  font-size: 0.7rem;
+  color: rgb(255, 255, 255);
+  margin: 0;
+  transform: translateY(-1.7rem);
+}
+.body .footer .copyright {
+  font-size: 0.7rem;
+  color: rgb(74, 74, 74);
+}/*# sourceMappingURL=faqs.css.map */

@@ -1,0 +1,243 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    text-decoration: none;
+}
+
+@mixin display {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+html{
+    scroll-behavior: smooth;
+    background-color: #EEEEEE;
+}
+
+.body{
+    padding: 0;
+    margin: 0;
+
+    .header{
+        height: 5rem;
+        width: 100%;
+        @include display();
+        justify-content: space-between;
+        padding: 3rem;
+        background-color: rgb(255, 255, 255);
+
+        .logo{
+            height: 6rem;
+            width: auto;
+        }
+
+        .nav, .ul{
+            height: auto;
+            width: auto;
+            @include display();
+
+            .li{
+                font-size: 0.9rem;
+                font-weight: 500;
+                color: rgb(0, 0, 0);
+                list-style: none;
+                margin: 1rem;
+                padding: 0.2rem;
+                transition: all 0.2s;
+                border-bottom: 2px solid transparent;
+
+                &:Hover{
+                    cursor: pointer;
+                    border-bottom: 2px solid rgb(0, 0, 0);
+                }
+            }
+        }
+
+        .whatsapp{
+            height: 2rem;
+            width: auto;
+
+            &:hover{
+                cursor: pointer;
+            }
+        }
+    }
+
+    .section-1{
+        height: auto;
+        width: 100%;
+        @include display();
+        flex-direction: column;
+        background-image: url("../assets/images/background-2.png");
+        background-size: cover;
+
+        .article-1{
+            height: 700px;
+            width: 100%;
+            @include display();
+            justify-content: space-between;
+            padding-left: 6rem;
+            z-index: 1;
+
+            .div-info{
+                height: 550px;
+                width: 584px;
+                @include display();
+                flex-direction: column;
+                align-items: flex-start;
+                background-image: url("../assets/images/div-design.png");
+                background-size: cover;
+                padding: 2rem;
+
+                .title{
+                    width: 100%;
+                    text-align: start;
+                    font-size: 2rem;
+                    font-weight: lighter;
+                    color: black;
+                }
+    
+                .text{
+                    width: 100%;
+                    text-align: start;
+                    font-size: 0.8rem;
+                    color: black
+                }
+            }
+
+            .instagram-media{
+                height: 600px;
+                width: 150px;
+            }
+        }
+    }
+
+    .footer{
+        height: auto;
+        width: 100%;
+        @include display();
+        flex-direction: column;
+        background-color: black;
+        padding: 4rem;
+
+        .div-all-items{
+            height: auto;
+            width: 100%;
+            @include display();
+            justify-content: space-around;
+            align-items: flex-start;
+
+            .div-item{
+                height: auto;
+                width: auto;
+                @include display();
+                flex-direction: column;
+                align-items: flex-start;
+
+                .title{
+                    font-size: 1rem;
+                    font-weight: lighter;
+                    color: rgb(255, 255, 255);
+                }
+
+                .nav-footer, .ul-footer{
+                    height: auto;
+                    width: auto;
+                    @include display();
+                    flex-direction: column;
+                    align-items: flex-start;
+                    padding: 0;
+
+                    .li-footer{
+                        font-size: 0.8rem;
+                        color: rgb(255, 255, 255);
+                        list-style: none;
+                        margin-bottom: 1rem;
+                        transition: all 0.2s;
+                        border-bottom: 1px solid transparent;
+                        padding-bottom: 0.3rem;
+
+                        &:hover{
+                            cursor: pointer;
+                            border-bottom: 1px solid rgb(255, 255, 255);
+                        }
+                    }
+                }
+
+                .text{
+                    font-size: 0.8rem;
+                    color: rgb(255, 255, 255);
+                }
+
+                .img-instagram{
+                    height: 2rem;
+                    width: auto;
+
+                    &:Hover{
+                        cursor: pointer;
+                    }
+                }
+
+                .div-location{
+                    height: auto;
+                    width: auto;
+                    @include display();
+
+                    .location{
+                        height: 1rem;
+                        width: auto;
+                        margin-right: 0.5rem;
+                    }
+
+                    .text{
+                        font-size: 0.8rem;
+                        color: rgb(255, 255, 255);
+                    }
+                }
+
+                .div-contact{
+                    height: auto;
+                    width: auto;
+                    @include display();
+
+                    .icon{
+                        height: 1rem;
+                        width: auto;
+                        margin-right: 0.5rem;
+                    }
+
+                    .text{
+                        font-size: 0.8rem;
+                        color: rgb(255, 255, 255);
+                    }
+                }
+            }
+        }
+
+        .div-logo{
+            height: auto;
+            width: auto;
+            @include display();
+            flex-direction: column;
+
+            .logo{
+                height: 7rem;
+                width: auto;
+                margin: 0;
+            }
+
+            .title{
+                font-size: 0.7rem;
+                color: rgb(255, 255, 255);
+                margin: 0;
+                transform: translateY(-1.7rem);
+            }
+        }
+
+        .copyright{
+            font-size: 0.7rem;
+            color: rgb(74, 74, 74);
+        }
+    }
+}
